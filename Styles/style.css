@@ -130,6 +130,7 @@ nav{
 .banner-image img{
     max-width: 711px;
 }
+/* buttons style */
 .buttons{
    display: flex;
    margin-left: -2em;
