@@ -131,6 +131,7 @@ nav{
     max-width: 711px;
 }
 .buttons{
+   display: flex;
    margin-left: -2em;
    margin-top: 62px;
 }
