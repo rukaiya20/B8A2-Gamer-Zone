@@ -34,6 +34,7 @@
     font-weight: 600px;
     border-radius: 48px;
     background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+    padding: 21px 40px;
 }
 /* header  styles */
 
@@ -41,7 +42,7 @@
 nav{
     display: flex;
     justify-content: space-between;
-    margin: 35px 20px 0px 20px;
+    margin: 35px 20px 40px 20px;
 }
 /* nav logo style */
 .logo{
@@ -72,6 +73,9 @@ nav{
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
     padding: 17px 15px 17px 25px;
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
     
 }
 .follow-icons img{
@@ -79,11 +83,69 @@ nav{
     margin-left: 24px;
 }
 
+/* header banner styles*/
+.banner{
+    display: flex;
+    justify-content: space-between;
+    gap: 65px;
+}
+.banner-texts{
+    max-width: 50%;
+     background-image: url(/images/background.png);
+     margin: 148px 0px 0px 240px;
+}
+.banner-texts h2{
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    margin-left: -2em;
+}
+.banner-texts h1{
+    text-align: center;
+    font-size: 95px;
+    font-weight: 800;
+    margin-left: -1em;
+    margin-bottom: 24px;
+}
+.banner-texts ul li{
+    list-style-type: none;
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: lowercase;
+    margin-bottom: 17px;
+}
+.banner-texts img{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 10em;
 
+}
+.banner-image{
+    max-width: 100%;
+    margin-right: 60px;
+}
+.banner-image img{
+    max-width: 711px;
+}
+.buttons{
+   margin-left: -2em;
+   margin-top: 62px;
+}
+.go-rogue{
+    border-radius: 48px;
+    background: #4EC5F7;
+    margin-left: 24px;
+}
 /* mobile responsive */
 @media screen and (max-width: 576px){
     nav{
         flex-direction: column;
+        margin-left: 6em;
+        text-align: center;
+        
     }
     .logo{
         margin-bottom: 62px;
@@ -92,8 +154,76 @@ nav{
         display: block;
         text-align: center;
         margin-bottom: 36px;
+        margin-left: 0px;
     }
     .follow-btn{
         margin: 0 auto;
     }
+    .banner{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .banner-texts{
+       background: none;
+    }
+    .banner-texts h1{
+        margin-left: -2em;
+    }
+    .banner-texts h2{
+        margin-left: -4em;
+    }
+    .banner-texts img{
+        left: 4em;
+    }
+    .banner-texts p{
+        margin-left: -6em;
+    }
+    .buttons{
+       display: flex;
+       margin-left: -11em;
+    }
+    .banner-image{
+        margin: 0px 50px;
+        width: 100%;
+    }
+    .banner-image img{
+        width: 100%;
+    }
+}
+    
+
+/* tablet responsive */
+@media screen and (min-width: 576px) and (max-width: 992px){
+    nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 35px -23em 40px 50px;
+    }
+    .menu > ul > li{
+        margin-right: 10px;
+    }
+    .follow-btn{
+        padding: 15px 10px;
+        
+    }
+    .follow-icons img{
+        width: 32px;
+        margin-left: 5px;
+    }
+    .banner-texts h1{
+        margin-left: -2em;
+    }
+    .banner-texts h2{
+        margin-left: -4em;
+    }
+    .banner-texts img{
+        left: 4em;
+    }
+    .banner-texts p{
+        margin-left: -6em;
+    }
+    .buttons{
+        display: flex;
+        margin-left: -12em;
+     }
 }
