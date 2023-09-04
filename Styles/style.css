@@ -1,0 +1,99 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* common style */
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Work Sans', sans-serif;
+}
+.titel{
+    font-size: 48px;
+    font-weight: 700;
+}
+.description{
+    font-size: 18px;
+    font-weight: 400px;
+}
+.titel-color{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.color-primary{
+    background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn-primary{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600px;
+    border-radius: 48px;
+    background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+}
+/* header  styles */
+
+/* nav styles */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 20px 0px 20px;
+}
+/* nav logo style */
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo h1{
+   font-size: 45px;
+   font-weight: 700;
+}
+.logo img{
+    width: 85px;
+    margin-right: 20px;
+}
+.menu > ul > li{
+    display: inline-block;
+    list-style-type: none;
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 32px;
+
+}
+.follow-btn{
+    display:flex;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 17px 15px 17px 25px;
+    
+}
+.follow-icons img{
+    width: 32px;
+    margin-left: 24px;
+}
+
+
+/* mobile responsive */
+@media screen and (max-width: 576px){
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        margin-bottom: 62px;
+    }
+    .menu > ul > li{
+        display: block;
+        text-align: center;
+        margin-bottom: 36px;
+    }
+    .follow-btn{
+        margin: 0 auto;
+    }
+}
