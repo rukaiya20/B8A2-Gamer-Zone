@@ -211,6 +211,8 @@ nav{
 }
 .card3 img:hover{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
+    border-radius: 16px;
+    border: 4px solid #FF42A5;
 }
 .card3 .watch-now:hover{
     opacity: 1;
@@ -283,6 +285,7 @@ nav{
     border-radius: 50px;
     margin-left: 10px;
     transition: border 0.3s;
+    color: #FF42A5;
 }
 /* footer style */
 .footer{
