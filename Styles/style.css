@@ -209,7 +209,7 @@ nav{
 .card3{
     position: relative;
 }
-.card3:hover{
+.card3 img:hover{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
 }
 .card3 .watch-now:hover{
@@ -289,7 +289,7 @@ nav{
     background-color: #0B0223;
     width: 100%;
 }
-.footer > .logo{
+.footer > .footer-content > .logo{
     color: #fff;
     padding-top: 120px;
     margin-bottom: 66px;
