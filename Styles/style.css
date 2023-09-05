@@ -180,6 +180,57 @@ nav{
 .gamer-image img{
     width: 100%;
 }
+/* Online games and videos styles */
+.games-videos{
+  margin-top: 175px;
+}
+.games-videos-titel{
+    text-align: center;
+}
+.games-videos-titel h1{
+ margin-bottom: 24px;
+}
+.games-videos-cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    gap: 10px;
+   }
+.games-videos-cards img{
+    width: 100%;
+  }
+.games-videos-cards p{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.games-videos-cards p{
+    max-width: 324px;
+}
+/* Play Instantly */
+.Play-Instantly{
+    display: flex;
+    justify-content: space-between;
+
+}
+.Play-Instantly-content{
+    margin-left: 50px;
+    margin-top: 336px;
+    max-width: 340px;
+    text-align: right;
+}
+.Play-Instantly-image{
+    position: relative;
+    margin-right: 50px;
+    margin-top: 120px;
+}
+.Play-Instantly-image img{
+    width: 100%;
+}
+.image-two{
+    position: absolute;
+    bottom: -110px;
+    left: -90px;
+}
 /* mobile responsive */
 @media screen and (max-width: 576px){
     /* header style */
@@ -248,7 +299,31 @@ nav{
     .purpose-titel span{
         margin-top: 60px;
     }
-}  
+    /* .games-videos styles */
+    .games-videos-titel h1{
+        font-size: 25px;
+       }
+    .games-videos-titel p{
+        font-size: 15px;
+       }
+   .games-videos-cards img{
+     width: 100%;
+   }
+   .games-videos-cards{
+     flex-direction: column;
+     margin: 0px;
+     padding: 80px 0px 0px 50px;
+   }
+   /* play instantly */
+   .Play-Instantly{
+    flex-direction: column;
+    justify-content: center;
+}
+.Play-Instantly-image {
+    width: 100%;
+    right: -3em;
+}
+}
     
 
 /* tablet responsive */
@@ -305,4 +380,19 @@ nav{
         position: absolute;
         padding-left: 10px;
     }
+    /* games and videos style */
+    /* .games-videos-titel h1{
+        font-size: 25px;
+       }
+    .games-videos-titel p{
+        font-size: 15px;
+       } */
+   /* .games-videos-cards img{
+     width: 100%;
+   } */
+   .games-videos-cards{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     padding-top: 200px;
+   }
 }
