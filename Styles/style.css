@@ -141,8 +141,48 @@ nav{
     background: #4EC5F7;
     margin-left: 24px;
 }
+
+/* gamer styles */
+.gamer{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    text-align: right;
+}
+.gamer-content{
+    margin-top: 95px;
+    margin-right: 110px;
+}
+.gamer-content p{
+    max-width: 520px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    
+}
+.purpose-titel span{
+    display: block;
+    margin-top: 24px;
+    max-width: 520px;
+}
+.purpose-titel span{
+    color: #534C64;
+    font-size: 24px;;
+    font-weight: 500;
+}
+.purpose-titel .purpose{
+    color: #534C64;
+    font-size: 32px;;
+    font-weight: 700;
+}
+.gamer-image {
+    width: 100%;
+}
+.gamer-image img{
+    width: 100%;
+}
 /* mobile responsive */
 @media screen and (max-width: 576px){
+    /* header style */
     nav{
         flex-direction: column;
         margin-left: 6em;
@@ -161,6 +201,7 @@ nav{
     .follow-btn{
         margin: 0 auto;
     }
+    /* banner style */
     .banner{
         flex-direction: column-reverse;
         justify-content: center;
@@ -191,11 +232,28 @@ nav{
     .banner-image img{
         width: 100%;
     }
-}
+    /* gamer style */
+    .gamer{
+        flex-direction: column;
+        text-align: center;
+    }
+    .gamer-image{
+        margin-top: 150px;
+        margin-left: 30px;
+    }
+    .gamer-content{
+        margin-right: -50px;
+        padding: 10px;
+    }
+    .purpose-titel span{
+        margin-top: 60px;
+    }
+}  
     
 
 /* tablet responsive */
 @media screen and (min-width: 576px) and (max-width: 992px){
+    /* header style */
     nav {
         display: flex;
         justify-content: space-between;
@@ -212,6 +270,7 @@ nav{
         width: 32px;
         margin-left: 5px;
     }
+    /* banner style */
     .banner-texts h1{
         margin-left: -2em;
     }
@@ -228,4 +287,22 @@ nav{
         display: flex;
         margin-left: -12em;
      }
+     /* gamer style */
+     .gamer{
+        width: 100%;
+        position:relative;
+    }
+    
+    .gamer-image {
+        width: 100%;
+        position: absolute;
+    }
+    .gamer-image img{
+        width: 100%;
+    }
+     .gamer-content{
+        right: -32em;
+        position: absolute;
+        padding-left: 10px;
+    }
 }
