@@ -232,26 +232,7 @@ nav{
     left: -90px;
 }
 /* games styles */
-/* .games-chart1,.games-chart2{
-    display: flex;
-    margin-top: 300px;
-    justify-content: center;
-    
-}  
-.games-chart2{
-    margin-top: 27px;
-} 
-.games-chart1 img , .games-chart2 img{
-    margin-bottom: -1.5em;
-    margin-left: 35px;
-}
-.image-border:hover{
-    border: 1px solid #FF42A5;
-    border-radius: 50px;
-    margin-left: 10px;
-    padding: 28px 20px 28px 10px;
-    transition: border 0.3s;
-} */
+
 .games{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -278,6 +259,45 @@ nav{
     border-radius: 50px;
     margin-left: 10px;
     transition: border 0.3s;
+}
+/* footer style */
+.footer{
+    background-color: #0B0223;
+    width: 100%;
+}
+.footer > .logo{
+    color: #fff;
+    padding-top: 120px;
+    margin-bottom: 66px;
+}
+.footer-menu , .footer-icons, .footer-policys{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer-menu a , .footer-icons a,.footer-policys a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+}
+.footer-menu ul li , .footer-icons ul li , .footer-policys ul li{
+    display: inline-block;
+    margin: 0 auto;
+}
+.footer-icons img{
+    width: 40px;
+    margin-right: 40px;
+    margin-top: 66px;
+    margin-bottom: 66px;
+}
+.footer-policys a{
+    color: rgba(255, 255, 255, 0.60);
+    margin-right: 60px;
+}
+.copyright{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    margin-top: 66px;
 }
 /* mobile responsive */
 @media screen and (max-width: 576px){
@@ -385,6 +405,14 @@ nav{
    width: 100%;
   margin-left: 0em;
 }
+.footer{
+    background-color: #0B0223;
+    width: 100%;
+    padding-right: 9em;
+}
+.footer-menu , .footer-icons, .footer-policys{
+    margin-left: 8em;
+}
 }
     
 
@@ -442,16 +470,6 @@ nav{
         position: absolute;
         padding-left: 10px;
     }
-    /* games and videos style */
-    /* .games-videos-titel h1{
-        font-size: 25px;
-       }
-    .games-videos-titel p{
-        font-size: 15px;
-       } */
-   /* .games-videos-cards img{
-     width: 100%;
-   } */
    .games-videos-cards{
      display: grid;
      grid-template-columns: repeat(2, 1fr);
