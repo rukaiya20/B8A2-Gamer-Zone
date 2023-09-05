@@ -206,6 +206,30 @@ nav{
 .games-videos-cards p{
     max-width: 324px;
 }
+.card3{
+    position: relative;
+}
+.card3:hover{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
+}
+.card3 .watch-now:hover{
+    opacity: 1;
+}
+.watch-now{
+    position: absolute;
+    top: 8em;
+    left: 7em;
+    opacity: 0;
+}
+
+.watch-now p{
+   font-size: 20px;
+   font-weight: 600;
+   background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 /* Play Instantly */
 .Play-Instantly{
     display: flex;
@@ -484,7 +508,7 @@ nav{
      padding-top: 40em;
      margin-left: 18em;
    }
-   /* <!-- Play Instantly --> */
+  /* <!-- Play Instantly --> */
    .Play-Instantly-image{
     width: 100%;
     position: absolute;
